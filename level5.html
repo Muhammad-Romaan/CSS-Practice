@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid black;
+            /*transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 5s;*/
+            position: absolute;
+            top: 130px;
+            left: 130px;
+            /*   transform: rotate(95deg);
+            rotate: y 40deg;
+            transform: scale(2);*/
+            transition: all 2s ease-in;
+            animation-name: colorAnimate;
+            animation-duration: 0.25s;
+            /* animation-timing-function: ;*/
+            animation-delay: 0;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        /*div:hover {
+            background-color: rgb(255, 0, 0);
+            color: white;
+            font-size: 20px;
+            transform: scale(3);
+           transform: rotate(90deg);
+            transform: translate(200px, 100px);
+            transform: skew(50deg);
+        }*/
+
+        @keyframes colorAnimate {
+            from {
+                background-color: aqua;
+            }
+
+            to {
+                background-color: blueviolet;
+            }
+        }
+
+        div:active {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>This is a box</div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .loader {
+        border-radius: 50%;
+        /* background-color: brown;*/
+        width: 200px;
+        height: 200px;
+        border: 20px solid black;
+        border-top: 20px solid red;
+        animation: spinloader 3s ease-in-out 0s infinite normal;
+
+    }
+
+    @keyframes spinloader {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <div class="loader"></div>
+</body>
+
+</html>
